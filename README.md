@@ -72,6 +72,14 @@ git clone https://github.com/github_username/repo_name.git
 ```sh
 Under build, clean and rebuild project before running Android app
 ```
+4. Instrucitons
+```sh
+task1.py is the solved task for task 1
+task2.py is the initial solvement for task 2
+Folder 'OsloBySykkelFinal' is the Android application
+Folder 'images' is screenshots of the Android application
+Folder 'pythonmap' was the initial try/playing around for visuals for task 2 
+```
 
 ### Prerequisites
 
