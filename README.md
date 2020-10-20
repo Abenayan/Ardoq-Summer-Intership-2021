@@ -72,7 +72,7 @@ git clone https://github.com/github_username/repo_name.git
 ```sh
 Under build, clean and rebuild project before running Android app
 ```
-4. Instrucitons
+4. Instructions 
 ```sh
 task1.py is the solved task for task 1
 task2.py is the initial solvement for task 2
