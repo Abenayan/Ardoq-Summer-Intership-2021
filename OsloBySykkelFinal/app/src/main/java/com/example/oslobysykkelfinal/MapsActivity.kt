@@ -73,19 +73,21 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             var name = station.name
             var address = station.address
             var capacity = station.capacity
-            var numbikes = "empty"
+            var numbikes = "emtpy"
             var numdocks = "empty"
-
             for (info in listofstationinfo){
-                numbikes = info.num_bikes_available
-                numdocks = info.num_docks_available
+                if(station.station_id == info.station_id){
+                    numbikes = info.num_bikes_available
+                    numdocks = info.num_docks_available
+                    mMap.addMarker(MarkerOptions().position(pos).title(name).snippet(
+                        "Address: " + address + "\n" +
+                                "Capacity: " + capacity + "\n" +
+                                "Bikes available: " + numbikes + "\n" +
+                                "Docks available: " + numdocks
+                    ))
+                    continue
+                }
             }
-            mMap.addMarker(MarkerOptions().position(pos).title(name).snippet(
-                    "Address: " + address + "\n" +
-                            "Capacity: " + capacity + "\n" +
-                            "Bikes available: " + numbikes + "\n" +
-                            "Docks available: " + numdocks
-            ))
             mMap.setInfoWindowAdapter(CustomInfoWindowForGoogleMap(this))
             mMap.setOnInfoWindowClickListener(OnInfoWindowClickListener { marker -> marker.hideInfoWindow() })
         }
