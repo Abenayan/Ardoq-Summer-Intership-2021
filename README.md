@@ -16,6 +16,7 @@
 * [Getting Started](#getting-started)
   * [Use](#use)
   * [Prerequisites](#prerequisites)
+  * [Issues](#issues)
 * [Procedure](#procedure)
 * [Contact](#contact)
 
@@ -101,6 +102,10 @@ Download android studios to run Android app
 ## Procedure
 
 Used the API from Oslo bysykkel to show locations with data that was required by Ardoq. Additionally used Google Maps SDK and API key for the use of google maps. Initially I used python to handle the API, and visualised in terminal but was not satisfied so swithed over to Android for better visuals. 
+
+## Issues
+
+While developing the Android app, I had some issued with with the google maps SDK and API key, so my google maps would not load on the Android application. At one point I even contaccted google maps sdk support, but they did not know the problem either. I eventually solved it and got it working, but it was a bit time consuming. Other than this issue, everyhitng else was proceeding fluidly.
 
 ## Contact
 
